@@ -5,11 +5,11 @@ connect("nedb://memory")
   .then((db) => {
     const client = fms.Filemaker.create({
       name: "flora",
-      database: "JCM_Development",
+      database: "database name",
       concurrency: 3,
-      server: "https://dev.jcminvestors.com",
-      user: "node-server",
-      password: "h3mvLZEj6M6VLY",
+      server: "server",
+      user: "user",
+      password: "password",
       usage: true,
     });
     return client.save();
